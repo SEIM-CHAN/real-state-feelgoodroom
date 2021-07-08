@@ -1,4 +1,10 @@
 # real-state-feelgoodroom
 
-環境構築
-$ docker-compose up -d
+# nginx link
+起動
+$ docker compose up -d
+
+nginx http://localhost:8080
+phpmyadmin http://localhost:8888/
+
+docker ps -a
