@@ -1,0 +1,57 @@
+.body {
+    /* width: 1000px; */
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(assets/UI/pexels-cottonbro-original.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+#header {
+    height: 78px;
+    // background-color: rgb(231, 226, 226);
+    /* background-color: red; */
+}
+
+#container {
+    display: flex;
+    flex: 1;
+}
+
+.main {
+    flex: 1;
+    /* background-color: blue; */
+    // background-image: url(assets/UI/pexels-cottonbro-4554244.jpg);
+    background-position: center;
+    
+}
+
+.nav-l {
+    width: 150px;
+    /* background-color: green; */
+}
+
+.nav-r {
+    width: 150px;
+    /* background-color: yellow; */
+}
+
+#footer {
+    height: 80px;
+    color: #fff;
+    /* background-color: black; */
+}
+
+@media screen and (max-width:900px) {
+    body, nav-l, nav-r{
+        width: 100%;
+    }
+    #container {
+        flex-direction: column;
+    }
+    .main {
+        order: -1;
+    }
+}
