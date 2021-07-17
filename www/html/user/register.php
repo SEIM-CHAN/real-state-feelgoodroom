@@ -69,11 +69,12 @@ if(isset($_POST["register"])){
         mysqli_query($conn, $sql);
    
         header("Location: email-verification.php?email=" . $email);
-         exit();
-    }catch {
+        exit();
+    }catch{
          echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
 }
+
 ?>
 
 <form action="POST">
